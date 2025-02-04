@@ -1,0 +1,125 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Paleta de colores */
+.color1 { color: #6094d1; }
+.color2 { color: #9baddf; }
+.color3 { color: #c1c2e8; }
+.color4 { color: #dcd4ea; }
+.color5 { color: #f0e6f0; }
+
+/* Diseño general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0e6f0;
+    color: #333;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #6094d1;
+    width: 100%;
+    border-radius: 25px; /* Suavizar borde superior */
+}
+
+header h1 {
+    color: white;
+}
+
+/* Formulario */
+.task-form, .task-list {
+    margin-top: 30px;
+    background-color: #9baddf;
+    padding: 40px;
+    border-radius: 30px; /* Bordes más redondeados */
+    width: 100%;
+    max-width: 600px; /* Mayor tamaño */
+}
+
+.task-form h2, .task-list h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 15px; /* Bordes más suaves */
+    font-size: 18px;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #c1c2e8;
+    border: none;
+    border-radius: 15px;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+form button:hover {
+    background-color: #dcd4ea;
+}
+
+/* Lista de tareas */
+.task-list ul {
+    list-style: none;
+}
+
+.task-list li {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #dcd4ea;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .task-form, .task-list {
+        padding: 30px;
+    }
+
+    form input, form button {
+        font-size: 16px;
+    }
+}
