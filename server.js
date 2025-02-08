@@ -61,6 +61,12 @@ function verificarToken(req, res, next) {
   });
 }
 
+// RUTA: base
+app.get('/', (req, res) => {
+    res.send('Actividad 3 por Pedro de León');
+});
+
+
 // RUTA: Registro
 app.post('/registro', async (req, res, next) => {
   try {
