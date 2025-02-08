@@ -61,7 +61,7 @@ function verificarToken(req, res, next) {
   });
 }
 
-// RUTA: base
+// RUTA: Base
 app.get('/', (req, res) => {
     res.send('Actividad 3 por Pedro de León');
 });
